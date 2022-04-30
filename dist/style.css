@@ -177,6 +177,11 @@ body {
 a {
   text-decoration: none;
   font-family: "Switzer";
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  opacity: 0.7;
 }
 
 header {
@@ -221,10 +226,10 @@ header .nav-toggle {
     display: block;
     position: relative;
     overflow: hidden;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: var(--color-dark);
     color: transparent;
     white-space: nowrap;
     text-indent: 100%;
@@ -289,6 +294,10 @@ nav .navlinks {
     margin-bottom: 30px;
   }
 }
+nav .nav-links:hover {
+  opacity: 0.7;
+  color: var(--color-grey);
+}
 @media (max-width: 768px) {
   nav {
     position: fixed;
@@ -314,6 +323,11 @@ nav .navlinks {
 .button {
   display: inline-block;
   border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.button:hover {
+  opacity: 0.7;
 }
 
 .hero {

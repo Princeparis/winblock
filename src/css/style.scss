@@ -114,6 +114,11 @@ body {
 a {
     text-decoration: none;
     font-family: "Switzer";
+    transition: all .5s ease;
+}
+
+a:hover {
+    opacity: 0.7;
 }
 
 header {
@@ -151,10 +156,10 @@ header {
             display: block;
             position: relative;
             overflow: hidden;
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
-            background-color: transparent;
+            background-color: var(--color-dark);
             color: transparent;
             white-space: nowrap;
             text-indent: 100%;
@@ -228,6 +233,11 @@ nav {
         }
     }
 
+    .nav-links:hover {
+        opacity: 0.7;
+        color: var(--color-grey);
+    }
+
     @include mq($mq-tab) {
         position: fixed;
         padding: 0 30px;
@@ -252,6 +262,11 @@ nav {
 .button {
     display: inline-block;
     border-radius: 0.5rem;
+    transition: all .5s ease;
+}
+
+.button:hover {
+    opacity: 0.7;
 }
 
 .hero {
