@@ -121,7 +121,7 @@ body {
 }
 
 .nav-open nav a:nth-child(2) {
-  animation-delay: 0.3s;
+  animation-delay: 0.4s;
 }
 
 .nav-open nav a:nth-child(3) {
@@ -129,11 +129,12 @@ body {
 }
 
 .nav-open nav a:nth-child(4) {
-  animation-delay: 0.7s;
+  animation-delay: 0.6s;
 }
 
 .nav-open nav a {
-  animation: slide-in 0.6s 0.2s backwards;
+  transform: translateZ(0);
+  animation: slide-in 0.4s 0.3s backwards;
 }
 
 .nav-open .overlay {
@@ -142,6 +143,9 @@ body {
   visibility: visible;
 }
 
+.nav-open nav {
+  transform: translateZ(0);
+}
 @media (max-width: 768px) {
   .nav-open nav {
     transform: translateX(0);
